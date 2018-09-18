@@ -1,0 +1,28 @@
+page-home {
+    height: auto;
+input {
+    text-align: center;
+ 
+}
+.content {
+    align-content: center;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.title{
+    text-align: center;
+}
+.bg {
+    background: linear-gradient(to top, grey 0%, #fff 100%);
+}
+.underline{
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/star.svg");
+    background-position: 0 1.06em;
+    background-size: 2px 2px;
+    color: #132a9b;
+  }
+}
+

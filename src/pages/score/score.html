@@ -1,0 +1,56 @@
+<!--
+  Generated template for the ScorePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>SCORE</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding *ngFor="let a of yes" class="bg">
+    <button ion-button small color="danger" (click)="Restart()"><i>RESTART</i></button>
+    <img class="imgs" src="../../assets/imgs/wallpapers.jpg" > 
+    <ion-grid>
+      
+          <ion-row (click)="check('B')">
+            <h1><i>Home</i></h1>
+
+            <br>
+            <h2 class="primary">{{a.home}}</h2>
+            <br>
+            <h3 class="ScoreText">{{hscore}}</h3>
+          </ion-row>
+          <ion-row>
+            <h1><i>VS</i></h1>
+
+          </ion-row>
+          <ion-row  (click)="check('T')">
+            <h1><i>Away</i></h1>
+            <br>
+            <h2 class="primary">{{a.away}}</h2>
+            <br>
+            <br>
+            <h3 class="ScoreText">{{Ascore}}</h3>
+            <br>
+          </ion-row>
+        
+      </ion-grid>
+
+      <BUTTON ion-button round small color="primary" (click)="Try()"><i>TRY (5)</i></BUTTON>
+      <button ion-button round small color="primary" (click)="  TryUndo()"><i>Try Undo.</i></button>
+      
+      <button ion-button round small color="primary" (click)="Penalty()"><i>PENALTY (3)</i></button>
+      <button ion-button round small color="primary" (click)="PenaltyUndo()"><i>Penalty Undo.</i></button>
+      
+      <button ion-button round small color="primary" (click)="conversion()"><i>CONVERSION (2)</i></button>
+      <button ion-button round small color="primary" (click)="conversionUndo()"><i>Conversion Undo</i></button>
+     
+      <button ion-button round small color="primary" (click)="Undo()"><i>UNDO</i></button>
+      
+</ion-content>

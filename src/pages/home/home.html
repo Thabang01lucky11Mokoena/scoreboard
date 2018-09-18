@@ -1,0 +1,26 @@
+<ion-header>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <ion-navbar>
+    <ion-title>
+      SCORE BOARD 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg">
+  <h1><span class="underline">WELCOME TO THE WORLD OF RUGBY</span></h1> <br>
+    <img class="imgs" src="../../assets/imgs/sporting-goods-4.jpg" >
+    <br> 
+    <br>
+ <ion-label><strong>HOME. </strong></ion-label>
+ <ion-input type="text" placeholder="Enter home team name."  [(ngModel)]="home" ></ion-input>
+  
+ <ion-label><strong>AWAY.</strong></ion-label>
+ <ion-input type="text" placeholder="Enter away team name"  [(ngModel)]="away"></ion-input>
+
+
+ <button  ion-button color="green" round (click)="goScore()"><i>Submit</i></button>
+ <br>
+ <img class="imgs" src="../../assets/imgs/wallpapers.jpg" >
+</ion-content>
+ 
